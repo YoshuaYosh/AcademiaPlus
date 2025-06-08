@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Miroir des Chercheurs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffa726, #fff);
+      color: #222;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .matiere {
+      background: #ff9800;
+      color: white;
+      padding: 12px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .photo {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .bio {
+      padding: 18px;
+      font-size: 14px;
+      text-align: left;
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      color: #111;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover .bio {
+      display: block;
+    }
+
+    .bio h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <h1>Miroir des Chercheurs</h1>
+    <div class="grid">
+
+      <div class="card">
+        <div class="matiere">Biotechnologie</div>
+        <img class="photo" src="images/chercheur1.jpg" alt="Dr Amani">
+        <div class="bio">
+          <h3>Dr Amani</h3>
+          <p>Spécialiste en biotechnologie végétale. Travaille sur les maladies tropicales.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="matiere">Électrotechnique</div>
+        <img class="photo" src="images/chercheur2.jpg" alt="Prof Nguema">
+        <div class="bio">
+          <h3>Prof Nguema</h3>
+          <p>Crée des robots éducatifs pour l’Afrique centrale. Professeur d’université.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="matiere">Chimie Organique</div>
+        <img class="photo" src="images/chercheur3.jpg" alt="Dr Bemba">
+        <div class="bio">
+          <h3>Dr Bemba</h3>
+          <p>Recherche sur les réactions organiques pour la médecine locale.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="matiere">Énergie Solaire</div>
+        <img class="photo" src="images/chercheur4.jpg" alt="Ing. Kiala">
+        <div class="bio">
+          <h3>Ing. Kiala</h3>
+          <p>Développe des systèmes solaires low-cost pour les zones rurales.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="matiere">Neurosciences</div>
+        <img class="photo" src="images/chercheur5.jpg" alt="Mme Toko">
+        <div class="bio">
+          <h3>Mme Toko</h3>
+          <p>Analyse les effets du numérique sur le cerveau des enfants.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="matiere">Agritech</div>
+        <img class="photo" src="images/chercheur6.jpg" alt="Dr Bayemi">
+        <div class="bio">
+          <h3>Dr Bayemi</h3>
+          <p>Créateur d’outils connectés pour améliorer les rendements agricoles.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="matiere">Intelligence Artificielle</div>
+        <img class="photo" src="images/chercheur7.jpg" alt="Prof Nsimba">
+        <div class="bio">
+          <h3>Prof Nsimba</h3>
+          <p>Travaille sur des IA de diagnostic médical pour hôpitaux africains.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="matiere">Hydraulique</div>
+        <img class="photo" src="images/chercheur8.jpg" alt="Dr Fatou">
+        <div class="bio">
+          <h3>Dr Fatou</h3><p>Spécialiste en gestion de l’eau et irrigation intelligente.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="matiere">Biochimie</div>
+        <img class="photo" src="images/chercheur9.jpg" alt="Dr Ilunga">
+        <div class="bio">
+          <h3>Dr Ilunga</h3>
+          <p>Recherche sur les enzymes africains et leurs applications pharmaceutiques.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="matiere">Technologie Médicale</div>
+        <img class="photo" src="images/chercheur10.jpg" alt="Ing. Aminata">
+        <div class="bio">
+          <h3>Ing. Aminata</h3>
+          <p>Conçoit des outils médicaux open-source pour hôpitaux africains.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

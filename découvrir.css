@@ -1,0 +1,40 @@
+section{
+    padding: 40px 20px;
+    background-color: #c11414;
+    margin-bottom: 30px;
+
+}
+
+.universite-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.universite-card{
+    width: 250px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgb(0,0,0);
+    transition: transform 0.3s ease;
+}
+.universite-card:hover{
+    transform: translateY(-5px);
+}
+.universite-card img{
+    width:100px;
+    height: 150px;
+    object-fit: cover;
+
+}
+.universite-card h4{
+    margin: 10px;
+    font-size: 18px;
+    color:#333;
+}
+.universite-card p{
+    margin: 0 10px 15px;
+    font-size: 14px;
+    color: #666;
+}

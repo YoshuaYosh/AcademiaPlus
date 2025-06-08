@@ -1,0 +1,267 @@
+/* 🌐 Global */
+* {
+  margin: 2;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-image: url(urlcropped-Academia-Plus-Logo_april-2025.webp);
+  background-size: cover; /* L'image prend toute la taille de l'écran */
+  background-repeat: no-repeat; /* Pas de répétition */
+  background-position: center; /* Centrée sur la page */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 50px; /* Ajoute un logo */
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* Centre le menu */
+  background-color: rgb(235, 58, 8); /* Garde le fond blanc */
+  padding: 15px 0; /* Ajuste l'espace autour */
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px; /* Augmente l'espacement entre les liens */
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px; /* Augmente légèrement la taille */
+  padding: 10px 15px; /* Ajoute de l'espace cliquable */
+  transition: color 0.3s ease
+  
+}
+
+.nav-links a:hover {
+  color: #000000; /* Couleur au survol */
+}
+
+.search-bar input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-right: 5px;
+}
+
+.search-bar button {
+  background-color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #9b7945;
+}
+
+/* 🎓 HERO */
+.hero {
+  background: linear-gradient(rgba(232, 50, 0, 0.648), rgba(0, 0, 0, 0.5)), 
+              url('.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* 🎯 OPTIONS */
+.options {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.options select, .options .btn {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.options .btn {
+  background-color: #f8b400;
+  color: rgb(235, 235, 235);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.options .btn:hover {
+  background-color: #f19c1b;
+}
+
+/* 🏛 Grid Cards */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card i {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+/* 🔘 Buttons */
+.btn {
+  .button {
+      padding: 10px 20px;
+      background: rgb(23, 23, 187);
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+  }
+}
+
+.btn:hover {
+  background: white;
+  color: #020202;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      padding-top: 10px;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+
+  .search-bar {
+      margin-top: 10px;
+  }
+}
+
+/* 🎯 Menu Responsive */
+.menu-toggle {
+  display: none;
+  background: #ffffff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background: #002147;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+.nav-links i {
+    font-size: 22px; /* Ajuste la taille */
+    color: #cf600aeb; /* Change la couleur si nécessaire */
+}
+
+/* Animation générale */
+@keyframes slideFromRight {
+from {
+  transform: translateX(100%);
+  opacity: 0;
+}
+to {
+  transform: translateX(0);
+  opacity: 1;
+}
+}
+
+@keyframes slideFromLeft {
+from {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+to {
+  transform: translateX(0);
+  opacity: 1;
+}
+}
+
+/* Appliquer sur la barre du haut */
+header {
+animation: slideFromRight 1s ease-out forwards;
+}
+
+/* Appliquer sur la barre du bas */
+footer {
+animation: slideFromLeft 1s ease-out forwards;
+animation-delay: 0.5s; /* démarre un peu après */
+}
+
+
+}

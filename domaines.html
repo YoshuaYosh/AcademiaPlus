@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Universités Notables en RDC</title>
+    <style>
+        /* Reset et base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 30px;
+        }
+        
+        /* En-tête */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .header h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            border-radius: 2px;
+        }
+        
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Grille des universités */
+        .university-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 0 auto;
+            max-width: 1300px;
+        }
+        
+        /* Carte d'université */
+        .university-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .university-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .university-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, #e74c3c, #3498db);
+        }
+        
+        .card-content {
+            padding: 25px;
+        }
+        
+        .university-card h2 {
+            color: #2c3e50;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .university-card p {
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #000000;
+        }
+        
+        .university-card p strong {
+            color: #3498db;
+            font-weight: 600;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #ecf0f1;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            color: #7f8c8d;
+            margin-top: 3px;
+        }
+        
+        .website-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+        
+        .website-link:hover {
+            background-color: #000000;
+        }
+        
+        .no-website {
+            color: #000000;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+        
+        /* Pied de page */
+        .footer {
+
+
+text-align: center;
+            margin-top: 50px;
+            color: #000000;
+            font-size: 0.9rem;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .university-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>10 Universités Notables en RDC</h1>
+        <p>Sélection des établissements d'enseignement supérieur les plus remarquables, reconnus par le Ministère de l'ESU</p>
+    </div>
+    
+    <div class="university-grid">
+        <!-- Université 1 -->
+        <div class="university-card">
+            <div class="card-content">
+                <h2>Université de Kinshasa (UNIKIN)</h2>
+                <p><strong>Création :</strong> 1954</p>
+                <p><strong>Spécialités :</strong> Médecine, Droit, Sciences, Ingénierie</p>
+                <p><strong>Directeur :</strong> Prof. Jean Mawingu</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value">45K</div>
+                        <div class="stat-label">Étudiants</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">15</div>
+                        <div class="stat-label">Facultés</div>
+                    </div>
+                </div>
+                
+                <a href="https://www.unikin.ac.cd" class="website-link">Site officiel</a>
+            </div>
+        </div>
+        
+        <!-- Université 2 -->
+        <div class="university-card">
+            <div class="card-content">
+                <h2>Université de Lubumbashi (UNILU)</h2>
+                <p><strong>Création :</strong> 1955</p>
+                <p><strong>Spécialités :</strong> Mines, Droit, Économie</p>
+                <p><strong>Directeur :</strong> Prof. Gilbert Kishiba</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value">30K</div>
+                        <div class="stat-label">Étudiants</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">12</div>
+                        <div class="stat-label">Facultés</div>
+                    </div>
+                </div>
+                
+                <a href="https://www.unilu.ac.cd" class="website-link">Site officiel</a>
+            </div>
+        </div>
+        
+        <!-- Université 3 -->
+        <div class="university-card">
+            <div class="card-content">
+                <h2>Université de Kisangani (UNIKIS)</h2>
+                <p><strong>Création :</strong> 1963</p>
+                <p><strong>Spécialités :</strong> Agronomie, Médecine, Sciences</p>
+                <p><strong>Directeur :</strong> Prof. Jambale Luyeye</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value">20K</div>
+                        <div class="stat-label">Étudiants</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">9</div>
+                        <div class="stat-label">Facultés</div>
+                    </div>
+                </div>
+                
+                <span class="no-website">Site non disponible</span>
+            </div>
+        </div>
+        
+        <!-- Université 4 -->
+        <div class="university-card">
+            <div class="card-content">
+                <h2>Université Catholique du Congo (UCC)</h2>
+                <p><strong>Création :</strong> 1987</p>
+                <p><strong>Spécialités :</strong> Théologie, Droit, Philosophie</p>
+                <p><strong>Directeur :</strong> Mgr.
+
+
+Léonard Santedi</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value">12K</div>
+                        <div class="stat-label">Étudiants</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">7</div>
+                        <div class="stat-label">Facultés</div>
+                    </div>
+                </div>
+                
+                <a href="https://www.ucc.cd" class="website-link">Site officiel</a>
+            </div>
+        </div>
+        
+        <!-- Université 5 -->
+        <div class="university-card">
+            <div class="card-content">
+                <h2>Université Protestante au Congo (UPC)</h2>
+                <p><strong>Création :</strong> 1959</p>
+                <p><strong>Spécialités :</strong> Théologie, Gestion, Santé</p>
+                <p><strong>Directeur :</strong> Dr. Denis Mukwege</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value">8K</div>
+                        <div class="stat-label">Étudiants</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">5</div>
+                        <div class="stat-label">Facultés</div>
+                    </div>
+                </div>
+                
+                <a href="https://www.upc-rdc.org" class="website-link">Site officiel</a>
+            </div>
+        </div>
+        
+        <!-- Université 6 -->
+        <div class="university-card">
+            <div class="card-content">
+                <h2>Institut Supérieur Pédagogique (ISP/Gombe)</h2>
+                <p><strong>Création :</strong> 1957</p>
+                <p><strong>Spécialités :</strong> Pédagogie, Langues, Sciences</p>
+                <p><strong>Directeur :</strong> Dr. Patrick Muepu</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value">13K</div>
+                        <div class="stat-label">Étudiants</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">6</div>
+                        <div class="stat-label">Départements</div>
+                    </div>
+                </div>
+                
+                <a href="#" class="website-link">Site officiel</a>
+            </div>
+        </div>
+        
+        <!-- Université 7 -->
+        <div class="university-card">
+            <div class="card-content">
+                <h2>Institut Supérieur des Arts et Métiers (ISAM)</h2>
+                <p><strong>Création :</strong> 1981</p>
+                <p><strong>Spécialités :</strong> Arts, Musique, Théâtre</p>
+                <p><strong>Directrice :</strong> Prof. Marie Mbala</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value">2K</div>
+                        <div class="stat-label">Étudiants</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">4</div>
+                        <div class="stat-label">Options</div>
+                    </div>
+                </div>
+                
+                <a href="#" class="website-link">Site officiel</a>
+            </div>
+        </div>
+        
+        <!-- Université 8 -->
+        <div class="university-card">
+            <div class="card-content">
+                <h2>Institut Supérieur d'Informatique (ISIPA)</h2>
+                <p><strong>Création :</strong> 1992</p>
+                <p><strong>Spécialités :</strong> Informatique, Réseaux, Data</p>
+                <p><strong>Directeur :</strong> Dr. Josué Mboyi</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value">5.5K</div>
+
+
+<div class="stat-label">Étudiants</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">3</div>
+                        <div class="stat-label">Départements</div>
+                    </div>
+                </div>
+                
+                <span class="no-website">Site non disponible</span>
+            </div>
+        </div>
+        
+        <!-- Université 9 -->
+        <div class="university-card">
+            <div class="card-content">
+                <h2>Université de Mbujimayi (UNIMB)</h2>
+                <p><strong>Création :</strong> 1990</p>
+                <p><strong>Spécialités :</strong> Mines, Gestion, Médecine</p>
+                <p><strong>Directeur :</strong> Prof. André Mpanya</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value">10K</div>
+                        <div class="stat-label">Étudiants</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">8</div>
+                        <div class="stat-label">Facultés</div>
+                    </div>
+                </div>
+                
+                <a href="#" class="website-link">Site officiel</a>
+            </div>
+        </div>
+        
+        <!-- Université 10 -->
+        <div class="university-card">
+            <div class="card-content">
+                <h2>Université de Goma (UNIGOM)</h2>
+                <p><strong>Création :</strong> 1993</p>
+                <p><strong>Spécialités :</strong> Vulcanologie, Paix, Santé</p>
+                <p><strong>Directeur :</strong> Prof. Faustin Bahati</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value">7K</div>
+                        <div class="stat-label">Étudiants</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">5</div>
+                        <div class="stat-label">Facultés</div>
+                    </div>
+                </div>
+                
+                <a href="https://www.unigom.ac.cd" class="website-link">Site officiel</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2023 - Ministère de l'Enseignement Supérieur et Universitaire (ESU-RDC)</p>
+    </div>
+</body>
+</html>
